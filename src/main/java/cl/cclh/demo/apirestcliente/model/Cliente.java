@@ -19,7 +19,6 @@ public class Cliente {
 	private String id;
 	
 	@ApiModelProperty(notes = "Rut del cliente")
-	@NotBlank(message = "Rut es un atributo obligatorio")
     @Indexed(unique = true)
 	private int rut;
     
