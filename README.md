@@ -77,17 +77,29 @@ Nota: Se implemento sobre el proyecto en springboot la parametrización de varia
 
 ## Seguridad de la API
 
-Se implemento el mecanismo de seguridad `Basic Authentication` sobre la API REST, el cual permite la invocación de los métodos de la API y la docs swagger mediante la autenticación de usuario. Estos valores se encuentran en el [secret.yaml](./docs/secret.yaml) el cual creado sobre el openshift e inyectado a nuestra aplicación. Estos valores son parametrizables desde el secret, sin necesidad de editar el código.
+Se implemento el mecanismo de seguridad `Basic Authentication` sobre la API REST, el cual permite la invocación de los métodos de la API y la docs swagger mediante la autenticación de usuario. Estos valores se encuentran en el [secret.yaml](./docs/secret.yaml) el cual creado sobre el openshift e inyectado a nuestra aplicación mediante variables de entorno en el `application.properties`. Estos valores son parametrizables desde el secret, sin necesidad de editar el código.
 
-Valores por defecto:
+401 - Unauthorized
+
+<img src="./docs/imagenes/autenticacion.png" alt="drawing" width="1000"/>
+
+Valores por defecto para autenticación:
 
 ```
 username: cclh
 password: apirestdemo
 ```
 
+200 - OK
+
+
+<img src="./docs/imagenes/autenticacionOk.png" alt="drawing" width="1000"/>
+
+
 ## Documentación API - Swagger
 
 Se incorpora swagger de la implementación de la API Rest en el link: [https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/swagger-ui.html#/](https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/swagger-ui.html#/)
+
+<img src="./docs/imagenes/swagger.png" alt="drawing" width="1000"/>
 
 Adicionalmente para facilitar el consumo y prueba de la API, se incorpora una collection de Postman para el consumo de la API [api-rest-cliente.postman_collection](./docs/api-rest-cliente.postman_collection)
