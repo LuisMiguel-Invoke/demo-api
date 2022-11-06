@@ -26,8 +26,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
-					"protocol": "http",
+					"raw": "https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "https",
 					"host": [
 						"api-rest-cliente-contacto-luisoliveros-dev",
 						"apps",
@@ -66,8 +66,8 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes/26705199",
-					"protocol": "http",
+					"raw": "https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes/26705199",
+					"protocol": "https",
 					"host": [
 						"api-rest-cliente-contacto-luisoliveros-dev",
 						"apps",
@@ -117,8 +117,8 @@
 					"raw": "{\r\n    \"rut\": 267066337,\r\n    \"dv\": \"7\",\r\n    \"nombres\": \"Jenny\",\r\n    \"apellidos\": \"Marquez\",\r\n    \"domicilio\": \"San Pablo 1391, depto 204 Santiago\",\r\n    \"telefono\": \"+56962234185\",\r\n    \"email\": \"jenny@mail.com\",\r\n    \"sexo\": \"F\"\r\n}"
 				},
 				"url": {
-					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
-					"protocol": "http",
+					"raw": "https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "https",
 					"host": [
 						"api-rest-cliente-contacto-luisoliveros-dev",
 						"apps",
@@ -167,8 +167,8 @@
 					"raw": "{\r\n    \"rut\": 267066337,\r\n    \"dv\": \"8\",\r\n    \"nombres\": \"Jenny\",\r\n    \"apellidos\": \"Marquez\",\r\n    \"domicilio\": \"San Pablo 1391, depto 204 Santiago\",\r\n    \"telefono\": \"+56962234185\",\r\n    \"email\": \"jennymarquez@mail.com\",\r\n    \"sexo\": \"F\"\r\n}"
 				},
 				"url": {
-					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
-					"protocol": "http",
+					"raw": "https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "https",
 					"host": [
 						"api-rest-cliente-contacto-luisoliveros-dev",
 						"apps",
@@ -207,8 +207,8 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes/267066337",
-					"protocol": "http",
+					"raw": "https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes/267066337",
+					"protocol": "https",
 					"host": [
 						"api-rest-cliente-contacto-luisoliveros-dev",
 						"apps",
@@ -248,8 +248,8 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
-					"protocol": "http",
+					"raw": "https://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "https",
 					"host": [
 						"api-rest-cliente-contacto-luisoliveros-dev",
 						"apps",
