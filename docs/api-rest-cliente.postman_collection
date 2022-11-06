@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "d5739764-cfbc-414a-ad31-0bf8a754ddf5",
+		"name": "API REST Cliente CCLH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Clientes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cclh",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "apirestdemo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "http",
+					"host": [
+						"api-rest-cliente-contacto-luisoliveros-dev",
+						"apps",
+						"sandbox-m2",
+						"ll9k",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Cliente por Rut",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "apirestdemo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cclh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes/26705199",
+					"protocol": "http",
+					"host": [
+						"api-rest-cliente-contacto-luisoliveros-dev",
+						"apps",
+						"sandbox-m2",
+						"ll9k",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"clientes",
+						"26705199"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cclh",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "apirestdemo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rut\": 267066337,\r\n    \"dv\": \"7\",\r\n    \"nombres\": \"Jenny\",\r\n    \"apellidos\": \"Marquez\",\r\n    \"domicilio\": \"San Pablo 1391, depto 204 Santiago\",\r\n    \"telefono\": \"+56962234185\",\r\n    \"email\": \"jenny@mail.com\",\r\n    \"sexo\": \"F\"\r\n}"
+				},
+				"url": {
+					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "http",
+					"host": [
+						"api-rest-cliente-contacto-luisoliveros-dev",
+						"apps",
+						"sandbox-m2",
+						"ll9k",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar Cliente",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cclh",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "apirestdemo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rut\": 267066337,\r\n    \"dv\": \"8\",\r\n    \"nombres\": \"Jenny\",\r\n    \"apellidos\": \"Marquez\",\r\n    \"domicilio\": \"San Pablo 1391, depto 204 Santiago\",\r\n    \"telefono\": \"+56962234185\",\r\n    \"email\": \"jennymarquez@mail.com\",\r\n    \"sexo\": \"F\"\r\n}"
+				},
+				"url": {
+					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "http",
+					"host": [
+						"api-rest-cliente-contacto-luisoliveros-dev",
+						"apps",
+						"sandbox-m2",
+						"ll9k",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cliente por Rut",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "cclh",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "apirestdemo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes/267066337",
+					"protocol": "http",
+					"host": [
+						"api-rest-cliente-contacto-luisoliveros-dev",
+						"apps",
+						"sandbox-m2",
+						"ll9k",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"clientes",
+						"267066337"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar TODOS los Clientes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "apirestdemo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cclh",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://api-rest-cliente-contacto-luisoliveros-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/clientes",
+					"protocol": "http",
+					"host": [
+						"api-rest-cliente-contacto-luisoliveros-dev",
+						"apps",
+						"sandbox-m2",
+						"ll9k",
+						"p1",
+						"openshiftapps",
+						"com"
+					],
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
