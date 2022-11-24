@@ -1,0 +1,6 @@
+opentracing:
+  jaeger
+    service-name: DemoTraza
+    enabled: TRUE
+    udp-sender: 
+      host: http://my-jaeger-collector:14268/api/traces
