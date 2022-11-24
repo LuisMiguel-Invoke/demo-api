@@ -1,5 +1,5 @@
 opentracing:
-  jaeger
+  jaeger:
     service-name: DemoTraza
     enabled: TRUE
     udp-sender: 
